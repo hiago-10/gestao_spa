@@ -11,8 +11,16 @@ import DashboardView from '@/views/DashboardView.vue'
 const routes = [
   {
     path: '/',
-    name: 'dashboard',
+    name: 'home',
     component: HomeView,
+    meta: {
+      title: 'Home',
+    },
+  },
+  {
+    path: '/dashboard',
+    name: 'dashboard',
+    component: DashboardView,
     meta: {
       title: 'Dashboard',
     },
@@ -52,28 +60,11 @@ const routes = [
   {
     path: '/cadastro',
     name: 'cadastro',
-    component: RelatoriosView,
-    meta: {
-      title: 'Relatórios',
-    },
-  },
-  {
-    path: '/cadastro',
-    name: 'cadastro',
     component: CadastroView,
     meta: {
       title: 'Cadastro',
     },
   },
-  {
-    path: '/dashboard',
-    name: 'dashboard',
-    component: DashboardView,
-    meta: {
-      title: 'Dashboard',
-    },
-  }
-
 ]
 
 const router = createRouter({
