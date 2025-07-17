@@ -1,86 +1,46 @@
 import {
-  mdiAccountCircle,
-  mdiMonitor,
-  mdiGithub,
-  mdiLock,
-  mdiAlertCircle,
-  mdiSquareEditOutline,
-  mdiTable,
-  mdiViewList,
-  mdiTelevisionGuide,
-  mdiResponsive,
-  mdiPalette,
-  mdiReact,
+  mdiViewDashboard,
+  mdiCalendarCheck,
+  mdiCashMultiple,
+  mdiFileChart,
+  mdiAccountGroup,
+  mdiLogout,
 } from '@mdi/js'
 
 export default [
   {
     to: '/dashboard',
-    icon: mdiMonitor,
+    icon: mdiViewDashboard,
     label: 'Dashboard',
   },
   {
-    to: '/tables',
-    label: 'Tables',
-    icon: mdiTable,
+    to: '/atendimentos',
+    icon: mdiCalendarCheck,
+    label: 'Atendimentos',
   },
   {
-    to: '/forms',
-    label: 'Forms',
-    icon: mdiSquareEditOutline,
+    to: '/financeiro',
+    icon: mdiCashMultiple,
+    label: 'Financeiro',
   },
   {
-    to: '/ui',
-    label: 'UI',
-    icon: mdiTelevisionGuide,
+    to: '/relatorios',
+    icon: mdiFileChart,
+    label: 'Relatórios',
   },
   {
-    to: '/responsive',
-    label: 'Responsive',
-    icon: mdiResponsive,
+    to: '/usuarios',
+    icon: mdiAccountGroup,
+    label: 'Usuários',
   },
   {
-    to: '/',
-    label: 'Styles',
-    icon: mdiPalette,
+    to: '/cadastro',
+    label: 'Cadastro',
+    icon: mdiAccountGroup,
   },
-  {
-    to: '/profile',
-    label: 'Profile',
-    icon: mdiAccountCircle,
-  },
-  {
-    to: '/login',
-    label: 'Login',
-    icon: mdiLock,
-  },
-  {
-    to: '/error',
-    label: 'Error',
-    icon: mdiAlertCircle,
-  },
-  {
-    label: 'Dropdown',
-    icon: mdiViewList,
-    menu: [
-      {
-        label: 'Item One',
-      },
-      {
-        label: 'Item Two',
-      },
-    ],
-  },
-  {
-    href: 'https://github.com/justboil/admin-one-vue-tailwind',
-    label: 'GitHub',
-    icon: mdiGithub,
-    target: '_blank',
-  },
-  {
-    href: 'https://github.com/justboil/admin-one-react-tailwind',
-    label: 'React version',
-    icon: mdiReact,
-    target: '_blank',
+ {
+    to: '/dashboard',
+    label: 'dashboard',
+    icon: mdiAccountGroup,
   },
 ]
